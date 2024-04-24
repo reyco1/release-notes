@@ -65,9 +65,9 @@ const generateReleaseNotes = async (commitLogs) => {
                 
         RELEASE NOTES TEMPLATE :
 
-        Version 1.0.62 - 1.0.61 (April 12, 2024)
-        Process headlines updates.
-        Enhanced caching features, including a force flag and improved handling of file naming conflicts.
+        Version range (date)
+        - update 1
+        - update 2
 
         
         COMMIT MESSAGES :
