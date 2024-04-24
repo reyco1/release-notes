@@ -57,20 +57,49 @@ const generateReleaseNotes = async (commitLogs) => {
     messages: [
       {
         role: "system",
-        content: "You are an expert in converting git commit logs into clean, minimal, professional release notes.",
+        content: `Steps to Format Git Commit Logs into Release Notes:
+        
+        1. **Input Preparation:**
+           - User will provide all commit logs relevant for the release notes.
+           - Ensure each log entry follows the standard format: "(v[version number]) [Commit message]".
+        
+        2. **Summary Creation:**
+           - Begin by summarizing the main achievements or features introduced in this batch of commits. Highlight any major enhancements, critical bug fixes, or significant performance improvements.
+        
+        3. **Release Notes Formatting:**
+           - Group commits by their version number. Each group corresponds to a version release.
+           - For each version, sort the commit messages chronologically if dates are available, or maintain the order they were logged.
+        
+        4. **Release Notes Template:**
+           - **Header:** Start with a heading for the Release Notes followed by the date range these notes cover (if applicable).
+           - **Summary:** Provide a brief, general summary of what this release encompasses. Highlight key features and improvements.
+           - **Detailed Changes:**
+             - For each version, create a subsection with the version number as the heading.
+             - List each commit message under its respective version heading. Remove any redundant information like author names, and ensure the focus is on what changed.
+             - Use bullet points for each commit message to improve readability.
+        
+        5. **Consistency Check:**
+           - Ensure that the language is consistent throughout the document—use the same tense and voice.
+           - Check that formatting is uniform for each version subsection.
+        
+        6. **Example Output Structure:**
+        
+        Release Notes  - [Date Range or 'As of [Latest Date]']
+        
+        Summary:
+        This release brings significant user interface enhancements, improves performance, and fixes several critical bugs. Key updates include a revamped login screen and faster data processing.
+        
+        Version 1.0.10:
+        - Updated the UI for easier use.
+        - Improved error handling in the data export feature.
+        
+        Version 1.0.9:
+        - Enhanced security protocols for user authentication.
+        - Fixed memory leak issues observed in version 1.0.8.`,
       },
       {
         role: "user",
-        content: `These are the commits for our software, please convert them into release notes using the provided template. Consolidate commits from the same day for readibility sake:
-                
-        RELEASE NOTES TEMPLATE :
-
-        Version range (date)
-        - update 1
-        - update 2
-
-        
-        COMMIT MESSAGES :
+        content: `Please generate release notes for the following commit logs:
         
         ${commitLogs}`
       },

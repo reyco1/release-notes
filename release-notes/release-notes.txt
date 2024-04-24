@@ -1,4 +1,19 @@
-Version range (v0.0.1 - v0.0.3) (Tue Apr 23, 2024)
-- Initial commit
-- Added test logs
-- Added error handling
+---
+Release Notes - As of Apr 23, 2024
+
+Summary:
+This release introduces test release notes, error handling improvements, and initial commit setup.
+
+Version 0.0.4:
+- Added test release notes.
+
+Version 0.0.3:
+- Implemented error handling.
+
+Version 0.0.2:
+- Added test logs.
+
+Version 0.0.1:
+- Set up the initial commit.
+
+---
