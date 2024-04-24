@@ -1,4 +1,4 @@
-Release Notes:
+RELEASE NOTES:
 
 Version 1.0.62 - 1.0.61 (April 12, 2024)
 - Process headlines updates.

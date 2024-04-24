@@ -38,6 +38,7 @@ if (!apiKey) {
 const openai = new OpenAI({ apiKey });
 
 const getCommitLogs = async (since, until) => {
+  console.log(`Fetching commit logs from ${since} to ${until}...`);
   const command = `git log --since="${since}" --until="${until}" --pretty=format:"%ad - %s"`;
   return new Promise((resolve, reject) => {
     exec(command, (error, stdout, stderr) => {
@@ -51,6 +52,7 @@ const getCommitLogs = async (since, until) => {
 };
 
 const generateReleaseNotes = async (commitLogs) => {
+  console.log('Generating release notes...');
   const response = await openai.chat.completions.create({
     messages: [
       {
@@ -86,12 +88,11 @@ const saveToFile = async (releaseNotes, filePath) => {
   console.log(`Release notes saved to ${filePath}`);
 };
 
-console.log(`Generating release notes from ${argv.since} to ${argv.until}...`);
 const logs = await getCommitLogs(argv.since, argv.until);
-console.log('Commit logs retrieved.');
-console.log('Generating release notes...');
+// if there are not logs, throw a warning in red and exit
+if (!logs) {
+  console.error('No logs found for the specified date range.');
+  process.exit(1);
+}
 const notes = await generateReleaseNotes(logs);
-console.log('Release notes generated.');
-console.log('Saving release notes to file...');
 await saveToFile(notes, argv.output);
-console.log('Release notes saved.');
