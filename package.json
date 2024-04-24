@@ -1,0 +1,31 @@
+{
+  "name": "@reyco1/release-notes",
+  "version": "0.0.1",
+  "description": "Generates formatted release notes from Git commit logs using OpenAI's API.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "release-notes": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reyco1/release-notes.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "release notes",
+    "git",
+    "openai",
+    "cli",
+    "ai"
+  ],
+  "author": "Rey Columnam",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "openai": "^4.38.3",
+    "yargs": "^17.0.1"
+  }
+}
