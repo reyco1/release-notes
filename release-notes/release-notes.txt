@@ -1,19 +1,19 @@
----
-Release Notes - As of Apr 23, 2024
+### Release Notes
 
-Summary:
-This release introduces test release notes, error handling improvements, and initial commit setup.
+**Summary:**
+This release introduces features for generating release notes, error handling improvements, and initial commit setup.
 
-Version 0.0.4:
+**Version 0.0.5:**
+- Updated prompt for generating release notes from OpenAI.
+
+**Version 0.0.4:**
 - Added test release notes.
 
-Version 0.0.3:
+**Version 0.0.3:**
 - Implemented error handling.
 
-Version 0.0.2:
+**Version 0.0.2:**
 - Added test logs.
 
-Version 0.0.1:
-- Set up the initial commit.
-
----
+**Version 0.0.1:**
+- Initial commit setup.
