@@ -1,6 +1,7 @@
 # Release Notes Generator
 
-[![GitHub license](https://img.shields.io/github/license/reyco1/release-notes)](https://github.com/reyco1/release-notes/blob/main/LICENSE)  [![GitHub issues](https://img.shields.io/github/issues/reyco1/release-notes)](https://github.com/reyco1/release-notes/issues)  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/reyco1/release-notes)  ![npm](https://img.shields.io/npm/dw/@reyco1/release-notes)  ![npm](https://img.shields.io/npm/v/@reyco1/release-notes)
+[![GitHub license](https://img.shields.io/github/license/reyco1/release-notes)](https://github.com/reyco1/release-notes/blob/main/LICENSE)  [![GitHub issues](https://img.shields.io/github/issues/reyco1/release-notes)](https://github.com/reyco1/release-notes/issues)  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/reyco1/release-notes)  ![npm](https://img.shields.io/npm/dw/@reyco1/release-notes)  ![npm](https://img.shields.io/npm/v/@reyco1/release-notes) ![GitHub watchers](https://img.shields.io/github/watchers/reyco1/release-notes)
+
 
 
 The Release Notes Generator is a command-line tool that automates the creation of professional release notes from Git commit logs. Leveraging OpenAI's powerful GPT-3.5 model, it efficiently converts raw commit data into a clean, structured format. This tool is ideal for project managers, developers, and teams looking to streamline their release documentation process.
