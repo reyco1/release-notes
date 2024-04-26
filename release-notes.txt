@@ -1,5 +1,0 @@
-Release Notes:
-
-Version 1.0.62 - 1.0.61 (April 12, 2024)
-- Process headlines updates.
-- Enhanced caching features, including a force flag and improved handling of file naming conflicts.

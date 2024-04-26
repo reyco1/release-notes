@@ -2,7 +2,7 @@ Steps to Format Git Commit Logs into Release Notes:
         
 1. Input Preparation:
     - User will provide all commit logs relevant for the release notes.
-    - Ensure each log entry follows the standard format: "(v[version number]) [Commit message]".
+    - Ensure each log entry follows the standard format: "[dateTime] (v[version number]) [Commit message]".
 
 2. Summary Creation:
     - Begin by summarizing the main achievements or features introduced in this batch of commits. Highlight any major enhancements, critical bug fixes, or significant performance improvements.
