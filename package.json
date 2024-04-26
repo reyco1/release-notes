@@ -1,6 +1,6 @@
 {
   "name": "@reyco1/release-notes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generates formatted release notes from Git commit logs using OpenAI's API.",
   "main": "index.js",
   "private": false,
